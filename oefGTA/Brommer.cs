@@ -14,7 +14,7 @@ namespace oefGTA
 
         public override void Rij()
         {
-            Console2.WriteLine("De brommer rijdt...", ConsoleColor.Red);
+            Console2.WriteLine("De brommer rijdt...", ConsoleColor.Blue);
         }
     }
 }

@@ -12,14 +12,17 @@ namespace oefGTA
         static void Main(string[] args)
         {
             Voertuig v = new Voertuig(ConsoleColor.Magenta);
-            Brommer brommer = new Brommer();
+            Voertuig brommer = new Brommer();
             Voertuig truck = new Vrachtwagen();
-            Auto a = new Auto();
+            Voertuig a = new Auto();
             v.Rij();
-            brommer.Rij();
-            truck.Rij();
-            truck.Stuur(50);
+            v.Stop();
+            //brommer.Rij();
+            //truck.Rij();
+            //truck.Stuur(50);
+            a.Rij();
             a.Stuur(180);
+            a.Stop();
         }
     }
 }

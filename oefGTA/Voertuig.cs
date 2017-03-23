@@ -24,5 +24,9 @@ namespace oefGTA
         {
             Console.WriteLine("");
         }
+        public virtual void Stop()
+        {
+            Console2.WriteLine("Het {{voertuig}} stop...", ConsoleColor.White, kleur);
+        }
     }
 }

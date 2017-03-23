@@ -8,6 +8,7 @@ namespace oefGTA
 {
     class Auto : Voertuig
     {
+
         public Auto() : base(ConsoleColor.DarkYellow)
         {
         }
@@ -18,8 +19,12 @@ namespace oefGTA
         }
         public override void Stuur(int graden)
         {
-            Console.WriteLine("De chauffeur kijkt in zijn achtruitkijk spiegel");
+            Console.WriteLine("De auto draait {0} graden en de chauffeur kijkt in zijn achtruitkijk spiegel", graden);
             base.Stuur(graden);
+        }
+        public override void Stop()
+        {
+            Console2.WriteLine("De auto stopt...", ConsoleColor.Red);
         }
     }
 }
