@@ -15,6 +15,7 @@ namespace oefGTA
             Voertuig brommer = new Brommer();
             Voertuig truck = new Vrachtwagen();
             Voertuig a = new Auto();
+            Persoon i = new Persoon();
             v.Rij();
             v.Stop();
             //brommer.Rij();
@@ -23,6 +24,8 @@ namespace oefGTA
             a.Rij();
             a.Stuur(180);
             a.Stop();
+            
+            
         }
     }
 }
